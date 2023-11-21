@@ -1,9 +1,20 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "ingredients": [
-    {
-      "item"
+  "pattern": [
+    " m ",
+    " d ",
+    "   "
+  ],
+  "key": {
+    "m": {
+      "item": "minecraft:cooked_beef"
+    },
+    "d": {
+      "item": "pizza_mod:dough"
     }
-  ]
+  },
+  "result": {
+    "item": "pizza_mod:pizza"
+  }
 }

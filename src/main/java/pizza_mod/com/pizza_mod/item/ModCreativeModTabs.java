@@ -18,6 +18,7 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                            pOutput.accept(ModItems.PIZZA.get());
                            pOutput.accept(ModItems.DOUGH.get());
+                           pOutput.accept(ModItems.TOMATO.get());
                     })
                     .build());
     public static void register(IEventBus eventBus){
