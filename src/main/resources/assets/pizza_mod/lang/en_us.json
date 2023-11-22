@@ -2,5 +2,8 @@
   "item.pizza_mod.pizza": "Pizza",
   "item.pizza_mod.dough": "Dough",
   "item.pizza_mod.tomato": "Tomato",
+
+  "block.pizza_mod.food_processor": "Food Processor",
+
   "creativetab.pizza_mod_tab": "Pizza Mod Tab"
 }

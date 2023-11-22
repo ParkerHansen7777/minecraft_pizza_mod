@@ -27,6 +27,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
+import pizza_mod.com.pizza_mod.block.ModBlocks;
 import pizza_mod.com.pizza_mod.item.ModCreativeModTabs;
 import pizza_mod.com.pizza_mod.item.ModItems;
 
@@ -69,6 +70,8 @@ public class PizzaMod
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 

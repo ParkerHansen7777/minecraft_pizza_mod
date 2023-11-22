@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import pizza_mod.com.pizza_mod.PizzaMod;
+import pizza_mod.com.pizza_mod.block.ModBlocks;
 
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -19,6 +20,7 @@ public class ModCreativeModTabs {
                            pOutput.accept(ModItems.PIZZA.get());
                            pOutput.accept(ModItems.DOUGH.get());
                            pOutput.accept(ModItems.TOMATO.get());
+                           pOutput.accept(ModBlocks.FOOD_PROCESSOR.get());
                     })
                     .build());
     public static void register(IEventBus eventBus){
