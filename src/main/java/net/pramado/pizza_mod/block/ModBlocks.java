@@ -1,4 +1,4 @@
-package pizza_mod.com.pizza_mod.block;
+package net.pramado.pizza_mod.block;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -9,8 +9,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import pizza_mod.com.pizza_mod.PizzaMod;
-import pizza_mod.com.pizza_mod.item.ModItems;
+import net.pramado.pizza_mod.PizzaMod;
+import net.pramado.pizza_mod.item.ModItems;
 
 import java.util.function.Supplier;
 

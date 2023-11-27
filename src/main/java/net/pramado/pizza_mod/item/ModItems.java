@@ -1,11 +1,11 @@
-package pizza_mod.com.pizza_mod.item;
+package net.pramado.pizza_mod.item;
 
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import pizza_mod.com.pizza_mod.PizzaMod;
+import net.pramado.pizza_mod.PizzaMod;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
