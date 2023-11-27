@@ -21,6 +21,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PIZZA);
         simpleItem(ModItems.DOUGH);
         simpleItem(ModItems.TOMATO);
+        simpleItem(ModItems.PEPPERONI);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

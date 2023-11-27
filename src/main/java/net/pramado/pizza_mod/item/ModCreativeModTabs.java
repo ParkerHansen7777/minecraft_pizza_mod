@@ -20,6 +20,7 @@ public class ModCreativeModTabs {
                            pOutput.accept(ModItems.PIZZA.get());
                            pOutput.accept(ModItems.DOUGH.get());
                            pOutput.accept(ModItems.TOMATO.get());
+                           pOutput.accept(ModItems.PEPPERONI.get());
                     })
                     .build());
     public static void register(IEventBus eventBus){
