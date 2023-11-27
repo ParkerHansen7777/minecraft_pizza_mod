@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=east": {
+      "model": "pizza_mod:block/food_processor",
+      "y": 90
+    },
+    "facing=north": {
       "model": "pizza_mod:block/food_processor"
+    },
+    "facing=south": {
+      "model": "pizza_mod:block/food_processor",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pizza_mod:block/food_processor",
+      "y": 270
     }
   }
 }

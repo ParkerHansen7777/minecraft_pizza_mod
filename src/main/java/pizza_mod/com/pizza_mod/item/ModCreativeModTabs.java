@@ -12,7 +12,7 @@ import pizza_mod.com.pizza_mod.block.ModBlocks;
 
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
-            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, PizzaMod.MODID);
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, PizzaMod.MOD_ID);
     public static final RegistryObject<CreativeModeTab> PIZZA_MOD_TAB = CREATIVE_MODE_TABS.register("pizza_mod_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PIZZA.get()))
                     .title(Component.translatable("creativetab.pizza_mod_tab"))

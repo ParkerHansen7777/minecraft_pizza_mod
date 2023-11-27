@@ -9,7 +9,7 @@ import pizza_mod.com.pizza_mod.PizzaMod;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, PizzaMod.MODID);
+            DeferredRegister.create(ForgeRegistries.ITEMS, PizzaMod.MOD_ID);
 
     public static final RegistryObject<Item> PIZZA = ITEMS.register("pizza",
             () -> new Item(new Item.Properties()));
