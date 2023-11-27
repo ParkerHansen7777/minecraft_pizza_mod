@@ -1,20 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
+  "key": {
+    "d": {
+      "item": "pizza_mod:dough"
+    },
+    "m": {
+      "item": "minecraft:cooked_beef"
+    }
+  },
   "pattern": [
     " m ",
     " d ",
     "   "
   ],
-  "key": {
-    "m": {
-      "item": "minecraft:cooked_beef"
-    },
-    "d": {
-      "item": "pizza_mod:dough"
-    }
-  },
   "result": {
     "item": "pizza_mod:pizza"
-  }
+  },
+  "show_notification": true
 }
