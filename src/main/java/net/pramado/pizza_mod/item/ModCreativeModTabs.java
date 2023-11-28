@@ -21,6 +21,7 @@ public class ModCreativeModTabs {
                            pOutput.accept(ModItems.DOUGH.get());
                            pOutput.accept(ModItems.TOMATO.get());
                            pOutput.accept(ModItems.PEPPERONI.get());
+                           pOutput.accept(ModBlocks.SALT_ORE.get());
                     })
                     .build());
     public static void register(IEventBus eventBus){

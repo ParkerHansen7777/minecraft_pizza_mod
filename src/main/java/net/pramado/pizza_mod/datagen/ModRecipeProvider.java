@@ -1,10 +1,7 @@
 package net.pramado.pizza_mod.datagen;
 
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.FinishedRecipe;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.pramado.pizza_mod.block.ModBlocks;
@@ -27,6 +24,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('m', Items.COOKED_BEEF)
                 .define('d', ModItems.DOUGH.get())
                 .unlockedBy(getHasName(ModItems.DOUGH.get()), has(ModItems.DOUGH.get()))
+                .save(p_251297_);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.PEPPERONI.get(), 4)
+                .requires(Items.COOKED_BEEF)
+                .unlockedBy(getHasName(Items.COOKED_BEEF), has(Items.COOKED_BEEF))
                 .save(p_251297_);
     }
 
