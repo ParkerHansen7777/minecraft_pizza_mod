@@ -1,6 +1,7 @@
 package net.pramado.pizza_mod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -11,6 +12,10 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.pramado.pizza_mod.block.custom.FoodProcessor;
+import net.pramado.pizza_mod.block.entity.ModBlockEntities;
+import net.pramado.pizza_mod.screen.FoodProcessorScreen;
+import net.pramado.pizza_mod.screen.ModMenuTypes;
 import org.slf4j.Logger;
 import net.pramado.pizza_mod.block.ModBlocks;
 import net.pramado.pizza_mod.item.ModCreativeModTabs;
@@ -33,6 +38,9 @@ public class PizzaMod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -69,7 +77,7 @@ public class PizzaMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            MenuScreens.register(ModMenuTypes.FOOD_PROCESSOR_MENU.get(), FoodProcessorScreen::new);
         }
     }
 }

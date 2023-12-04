@@ -31,6 +31,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         //this.dropSelf(ModBlocks.SALT_ORE.get());
+        this.dropSelf(ModBlocks.FOOD_PROCESSOR.get());
+
         this.add(ModBlocks.SALT_ORE.get(),
                 block -> createRedstoneLikeOreDrops(ModBlocks.SALT_ORE.get(), ModItems.SALT.get()));
     }

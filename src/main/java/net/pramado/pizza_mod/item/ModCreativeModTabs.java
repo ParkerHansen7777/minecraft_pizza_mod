@@ -24,6 +24,7 @@ public class ModCreativeModTabs {
                            pOutput.accept(ModItems.SALT.get());
 
                            pOutput.accept(ModBlocks.SALT_ORE.get());
+                           pOutput.accept(ModBlocks.FOOD_PROCESSOR.get());
 
                     })
                     .build());
