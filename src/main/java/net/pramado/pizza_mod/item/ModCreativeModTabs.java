@@ -22,6 +22,8 @@ public class ModCreativeModTabs {
                            pOutput.accept(ModItems.TOMATO.get());
                            pOutput.accept(ModItems.PEPPERONI.get());
                            pOutput.accept(ModItems.SALT.get());
+                           pOutput.accept(ModItems.CHEESE_GRATER.get());
+                           pOutput.accept(ModItems.CHEESE.get());
 
                            pOutput.accept(ModBlocks.SALT_ORE.get());
                            pOutput.accept(ModBlocks.FOOD_PROCESSOR.get());

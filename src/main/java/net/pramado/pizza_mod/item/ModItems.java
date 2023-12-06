@@ -23,6 +23,13 @@ public class ModItems {
 
     public static final RegistryObject<Item> SALT = ITEMS.register("salt",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> CHEESE_GRATER = ITEMS.register("cheese_grater",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

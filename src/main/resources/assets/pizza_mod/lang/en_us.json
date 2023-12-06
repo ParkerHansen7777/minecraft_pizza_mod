@@ -4,6 +4,8 @@
   "item.pizza_mod.tomato": "Tomato",
   "item.pizza_mod.pepperoni": "Pepperoni",
   "item.pizza_mod.salt": "Salt",
+  "item.pizza_mod.cheese_grater": "Cheese Grater",
+  "item.pizza_mod.cheese": "Cheese",
 
   "block.pizza_mod.food_processor": "Food Processor",
   "block.pizza_mod.salt_ore": "Salt Ore",
