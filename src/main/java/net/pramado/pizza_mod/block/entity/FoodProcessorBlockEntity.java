@@ -36,7 +36,7 @@ public class FoodProcessorBlockEntity extends BlockEntity implements MenuProvide
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgess = 78;
+    private int maxProgress = 78;
 
     public FoodProcessorBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(ModBlockEntities.FOOD_PROCESSOR_BE.get(), pPos, pBlockState);
@@ -45,7 +45,7 @@ public class FoodProcessorBlockEntity extends BlockEntity implements MenuProvide
             public int get(int pIndex) {
                 return switch (pIndex){
                     case 0 -> FoodProcessorBlockEntity.this.progress;
-                    case 1 -> FoodProcessorBlockEntity.this.maxProgess;
+                    case 1 -> FoodProcessorBlockEntity.this.maxProgress;
                     default -> 0;
                 };
             }
@@ -54,7 +54,7 @@ public class FoodProcessorBlockEntity extends BlockEntity implements MenuProvide
             public void set(int pIndex, int pValue) {
                 switch (pIndex){
                   case 0 -> FoodProcessorBlockEntity.this.progress = pValue;
-                  case 1 -> FoodProcessorBlockEntity.this.maxProgess = pValue;
+                  case 1 -> FoodProcessorBlockEntity.this.maxProgress = pValue;
                 };
             }
 
@@ -163,7 +163,7 @@ public class FoodProcessorBlockEntity extends BlockEntity implements MenuProvide
 
     private boolean hasProgressFinished() {
 
-        return progress >= maxProgess;
+        return progress >= maxProgress;
     }
 
     private void increaseCraftingProgress() {
