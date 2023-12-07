@@ -30,6 +30,9 @@ public class ModItems {
     public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> TOMATO_SAUCE = ITEMS.register("tomato_sauce",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

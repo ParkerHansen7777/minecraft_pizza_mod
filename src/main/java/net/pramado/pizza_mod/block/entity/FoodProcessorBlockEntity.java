@@ -138,7 +138,7 @@ public class FoodProcessorBlockEntity extends BlockEntity implements MenuProvide
     }
 
     private void craftItem() {
-        ItemStack result = new ItemStack(ModItems.PIZZA.get(), 1);
+        ItemStack result = new ItemStack(ModItems.TOMATO_SAUCE.get(), 1);
         this.itemHandler.extractItem(INPUT_SLOT, 1, false);
 
         this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
@@ -146,8 +146,8 @@ public class FoodProcessorBlockEntity extends BlockEntity implements MenuProvide
     }
 
     private boolean hasRecipe() {
-        boolean hasCraftingItem = this.itemHandler.getStackInSlot(INPUT_SLOT).getItem() == ModItems.DOUGH.get();
-                ItemStack result = new ItemStack(ModItems.PIZZA.get());
+        boolean hasCraftingItem = this.itemHandler.getStackInSlot(INPUT_SLOT).getItem() == ModItems.TOMATO.get();
+                ItemStack result = new ItemStack(ModItems.TOMATO_SAUCE.get());
 
         return hasCraftingItem && canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
     }
