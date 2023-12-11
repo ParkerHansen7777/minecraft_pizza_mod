@@ -1,5 +1,6 @@
 package net.pramado.pizza_mod.datagen.loot;
 
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlagSet;
@@ -12,12 +13,15 @@ import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import net.pramado.pizza_mod.PizzaMod;
 import net.pramado.pizza_mod.block.ModBlocks;
+import net.pramado.pizza_mod.block.custom.TomatoCropBlock;
 import net.pramado.pizza_mod.item.ModItems;
 
 import java.util.Set;
@@ -35,6 +39,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.SALT_ORE.get(),
                 block -> createRedstoneLikeOreDrops(ModBlocks.SALT_ORE.get(), ModItems.SALT.get()));
+
+        LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.TOMATO_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(TomatoCropBlock.AGE, 5));
+
+        this.add(ModBlocks.TOMATO_CROP.get(), createCropDrops(ModBlocks.TOMATO_CROP.get(), ModItems.TOMATO.get(),
+                ModItems.TOMATO_SEEDS.get(), lootitemcondition$builder));
     }
 
     protected LootTable.Builder createRedstoneLikeOreDrops(Block pBlock, Item item) {

@@ -27,6 +27,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         //simpleItem(ModItems.CHEESE_GRATER);
         //simpleItem(ModItems.CHEESE);
         simpleItem(ModItems.TOMATO_SAUCE);
+        simpleItem(ModItems.TOMATO_SEEDS);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

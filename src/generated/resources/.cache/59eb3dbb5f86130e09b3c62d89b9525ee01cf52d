@@ -1,3 +1,4 @@
-// 1.20.1	2023-12-04T11:11:47.2215874	Loot Tables
+// 1.20.1	2023-12-11T12:19:32.5014356	Loot Tables
 dc0e851744dd8a34759ba26676382c03520d836e data/pizza_mod/loot_tables/blocks/food_processor.json
 51f34c5d7740cd7ff44364f705f35a4c20978d70 data/pizza_mod/loot_tables/blocks/salt_ore.json
+1f14f4a31514bdac2817f885737f12034213aa66 data/pizza_mod/loot_tables/blocks/tomato_crop.json

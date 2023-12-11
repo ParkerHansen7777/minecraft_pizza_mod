@@ -11,6 +11,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.pramado.pizza_mod.PizzaMod;
 import net.pramado.pizza_mod.block.custom.FoodProcessor;
+import net.pramado.pizza_mod.block.custom.TomatoCropBlock;
 import net.pramado.pizza_mod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -22,6 +23,9 @@ public class ModBlocks {
             () -> new FoodProcessor(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion()));
     public static final RegistryObject<Block> SALT_ORE = registerBlock("salt_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE)));
+
+    public static final RegistryObject<Block> TOMATO_CROP = BLOCKS.register("tomato_crop",
+            () -> new TomatoCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

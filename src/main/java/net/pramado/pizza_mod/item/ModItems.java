@@ -1,11 +1,13 @@
 package net.pramado.pizza_mod.item;
 
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.pramado.pizza_mod.PizzaMod;
+import net.pramado.pizza_mod.block.ModBlocks;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -32,6 +34,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> TOMATO_SAUCE = ITEMS.register("tomato_sauce",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> TOMATO_SEEDS = ITEMS.register("tomato_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.TOMATO_CROP.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

@@ -1,7 +1,8 @@
-// 1.20.1	2023-12-07T11:18:27.7441334	Item Models: pizza_mod
+// 1.20.1	2023-12-11T13:02:21.8951919	Item Models: pizza_mod
 7fe736b641a58636392604ca12b56a4d9e08f89e assets/pizza_mod/models/item/dough.json
 b198e9beaed314e8333fd3b182b26a013c1ab13c assets/pizza_mod/models/item/pepperoni.json
 356a7fc7c74035c7d679631c1c2b9a5f885c81e6 assets/pizza_mod/models/item/pizza.json
 b15498e3185211bc5e1f3f5cec39095d1041f5c4 assets/pizza_mod/models/item/salt.json
 1921f7f91e54f8989c9774a67a555aba08cad98f assets/pizza_mod/models/item/tomato.json
 64f7a2f06b2253e30f2ad9ca21ed3d0d47d60985 assets/pizza_mod/models/item/tomato_sauce.json
+56a51074d2d5e7c7a0e3ac9ad426db22f44b5a95 assets/pizza_mod/models/item/tomato_seeds.json
