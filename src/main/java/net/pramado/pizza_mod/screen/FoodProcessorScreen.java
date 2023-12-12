@@ -21,6 +21,7 @@ public class FoodProcessorScreen extends AbstractContainerScreen<FoodProcessorMe
     @Override
     protected void init() {
         super.init();
+        this.titleLabelY = 10000;
     }
 
     @Override

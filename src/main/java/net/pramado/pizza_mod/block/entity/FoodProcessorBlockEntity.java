@@ -27,10 +27,11 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 public class FoodProcessorBlockEntity extends BlockEntity implements MenuProvider {
-    private final ItemStackHandler itemHandler = new ItemStackHandler(2);
+    private final ItemStackHandler itemHandler = new ItemStackHandler(3);
 
     private static final int INPUT_SLOT = 0;
-    private static final int OUTPUT_SLOT = 1;
+    private static final int INPUT_SLOT2 = 1;
+    private static final int OUTPUT_SLOT = 2;
 
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
 
@@ -60,7 +61,7 @@ public class FoodProcessorBlockEntity extends BlockEntity implements MenuProvide
 
             @Override
             public int getCount() {
-                return 2;
+                return 3;
             }
         };
     }
@@ -140,13 +141,15 @@ public class FoodProcessorBlockEntity extends BlockEntity implements MenuProvide
     private void craftItem() {
         ItemStack result = new ItemStack(ModItems.TOMATO_SAUCE.get(), 1);
         this.itemHandler.extractItem(INPUT_SLOT, 1, false);
+        this.itemHandler.extractItem(INPUT_SLOT2, 1, false);
 
         this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
                 this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));
     }
 
     private boolean hasRecipe() {
-        boolean hasCraftingItem = this.itemHandler.getStackInSlot(INPUT_SLOT).getItem() == ModItems.TOMATO.get();
+        boolean hasCraftingItem = this.itemHandler.getStackInSlot(INPUT_SLOT).getItem() == ModItems.TOMATO.get() &&
+                this.itemHandler.getStackInSlot(INPUT_SLOT2).getItem() == ModItems.SALT.get();
                 ItemStack result = new ItemStack(ModItems.TOMATO_SAUCE.get());
 
         return hasCraftingItem && canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
