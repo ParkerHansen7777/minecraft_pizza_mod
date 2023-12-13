@@ -31,7 +31,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         simpleBlockWithItem(ModBlocks.FOOD_PROCESSOR.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/food_processor")));
 
-        //makeTomatoCrop((CropBlock) ModBlocks.TOMATO_CROP.get(), "tomato_stage", "tomato_stage");
+        makeTomatoCrop((CropBlock) ModBlocks.TOMATO_CROP.get(), "tomato_stage", "tomato_stage");
     }
 
     public void makeTomatoCrop(CropBlock block, String modelName, String textureName){
