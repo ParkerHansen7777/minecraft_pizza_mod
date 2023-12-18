@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pizza_cutter": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "pizza_mod:pizza_cutter"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pizza_mod:pizza_slice"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_pizza_cutter",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pizza_mod:pizza_slice"
+    ]
+  },
+  "sends_telemetry_event": false
+}

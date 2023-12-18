@@ -30,6 +30,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(Items.COOKED_BEEF)
                 .unlockedBy(getHasName(Items.COOKED_BEEF), has(Items.COOKED_BEEF))
                 .save(p_251297_);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PIZZA_SLICE.get(), 8)
+                .requires(ModItems.PIZZA_CUTTER.get())
+                .requires(ModItems.PIZZA.get())
+                .unlockedBy(getHasName(ModItems.PIZZA_CUTTER.get()), has(ModItems.PIZZA_CUTTER.get()))
+                .save(p_251297_);
     }
 
 

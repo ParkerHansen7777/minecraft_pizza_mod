@@ -18,15 +18,17 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.pizza_mod_tab"))
                     .displayItems((pParameters, pOutput) -> {
                            pOutput.accept(ModItems.PIZZA.get());
+                           pOutput.accept(ModItems.PIZZA_SLICE.get());
                            pOutput.accept(ModItems.DOUGH.get());
                            pOutput.accept(ModItems.TOMATO.get());
                            pOutput.accept(ModItems.PEPPERONI.get());
                            pOutput.accept(ModItems.SALT.get());
                            pOutput.accept(ModItems.CHEESE_GRATER.get());
                            pOutput.accept(ModItems.CHEESE.get());
-                        pOutput.accept(ModItems.GRATED_CHEESE.get());
+                           pOutput.accept(ModItems.GRATED_CHEESE.get());
                            pOutput.accept(ModItems.TOMATO_SAUCE.get());
                            pOutput.accept(ModItems.TOMATO_SEEDS.get());
+                           pOutput.accept(ModItems.PIZZA_CUTTER.get());
 
                            pOutput.accept(ModBlocks.SALT_ORE.get());
                            pOutput.accept(ModBlocks.FOOD_PROCESSOR.get());

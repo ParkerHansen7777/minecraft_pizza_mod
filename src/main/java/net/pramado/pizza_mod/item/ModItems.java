@@ -13,8 +13,11 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, PizzaMod.MOD_ID);
 
-    public static final RegistryObject<Item> PIZZA = ITEMS.register("pizza",
+    public static final RegistryObject<Item> PIZZA_CUTTER = ITEMS.register("pizza_cutter",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> PIZZA = ITEMS.register("pizza",
+            () -> new Item(new Item.Properties().craftRemainder(PIZZA_CUTTER.get())));
     public static final RegistryObject<Item> DOUGH = ITEMS.register("dough",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> TOMATO = ITEMS.register("tomato",
@@ -40,6 +43,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> TOMATO_SEEDS = ITEMS.register("tomato_seeds",
             () -> new ItemNameBlockItem(ModBlocks.TOMATO_CROP.get(), new Item.Properties()));
+
+
+    public static final RegistryObject<Item> PIZZA_SLICE = ITEMS.register("pizza_slice",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
