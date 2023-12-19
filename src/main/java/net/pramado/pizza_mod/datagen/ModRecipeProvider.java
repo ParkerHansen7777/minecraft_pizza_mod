@@ -26,9 +26,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.DOUGH.get()), has(ModItems.DOUGH.get()))
                 .save(p_251297_);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.PEPPERONI.get(), 4)
-                .requires(Items.COOKED_BEEF)
-                .unlockedBy(getHasName(Items.COOKED_BEEF), has(Items.COOKED_BEEF))
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.RAW_PEPPERONI.get(), 4)
+                .requires(Items.BEEF)
+                .requires(Items.PORKCHOP)
+                .unlockedBy(getHasName(Items.BEEF), has(Items.BEEF))
                 .save(p_251297_);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PIZZA_SLICE.get(), 8)

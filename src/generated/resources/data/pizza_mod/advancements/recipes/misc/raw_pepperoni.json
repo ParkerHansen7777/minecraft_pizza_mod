@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cooked_beef": {
+    "has_beef": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:cooked_beef"
+              "minecraft:beef"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "pizza_mod:pepperoni"
+        "recipe": "pizza_mod:raw_pepperoni"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_cooked_beef",
+      "has_beef",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "pizza_mod:pepperoni"
+      "pizza_mod:raw_pepperoni"
     ]
   },
   "sends_telemetry_event": false

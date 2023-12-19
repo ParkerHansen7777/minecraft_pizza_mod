@@ -23,6 +23,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.DOUGH);
         simpleItem(ModItems.TOMATO);
         simpleItem(ModItems.PEPPERONI);
+        simpleItem(ModItems.RAW_PEPPERONI);
         simpleItem(ModItems.SALT);
         simpleItem(ModItems.CHEESE_GRATER);
         simpleItem(ModItems.CHEESE);

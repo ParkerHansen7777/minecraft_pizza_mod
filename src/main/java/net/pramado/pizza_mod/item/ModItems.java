@@ -17,13 +17,16 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> PIZZA = ITEMS.register("pizza",
-            () -> new Item(new Item.Properties().craftRemainder(PIZZA_CUTTER.get())));
+            () -> new Item(new Item.Properties().craftRemainder(PIZZA_CUTTER.get())  ));
     public static final RegistryObject<Item> DOUGH = ITEMS.register("dough",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> TOMATO = ITEMS.register("tomato",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> PEPPERONI = ITEMS.register("pepperoni",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> RAW_PEPPERONI = ITEMS.register("raw_pepperoni",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> SALT = ITEMS.register("salt",
