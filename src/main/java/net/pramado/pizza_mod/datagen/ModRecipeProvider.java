@@ -18,10 +18,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> p_251297_) {
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PIZZA.get())
-                .pattern(" m ")
-                .pattern(" d ")
-                .pattern("   ")
-                .define('m', Items.COOKED_BEEF)
+                .pattern(" p ")
+                .pattern("scs")
+                .pattern("ddd")
+                .define('p', ModItems.PEPPERONI.get())
+                .define('c', ModItems.GRATED_CHEESE.get())
+                .define('s', ModItems.TOMATO_SAUCE.get())
                 .define('d', ModItems.DOUGH.get())
                 .unlockedBy(getHasName(ModItems.DOUGH.get()), has(ModItems.DOUGH.get()))
                 .save(p_251297_);

@@ -2,17 +2,23 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
+    "c": {
+      "item": "pizza_mod:grated_cheese"
+    },
     "d": {
       "item": "pizza_mod:dough"
     },
-    "m": {
-      "item": "minecraft:cooked_beef"
+    "p": {
+      "item": "pizza_mod:pepperoni"
+    },
+    "s": {
+      "item": "pizza_mod:tomato_sauce"
     }
   },
   "pattern": [
-    " m ",
-    " d ",
-    "   "
+    " p ",
+    "scs",
+    "ddd"
   ],
   "result": {
     "item": "pizza_mod:pizza"
