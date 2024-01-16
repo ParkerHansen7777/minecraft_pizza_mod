@@ -17,7 +17,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> PIZZA = ITEMS.register("pizza",
-            () -> new Item(new Item.Properties().craftRemainder(PIZZA_CUTTER.get())  ));
+            () -> new Item(new Item.Properties().craftRemainder(PIZZA_CUTTER.get())));
     public static final RegistryObject<Item> DOUGH = ITEMS.register("dough",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> TOMATO = ITEMS.register("tomato",
@@ -36,7 +36,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().craftRemainder(CHEESE_GRATER.get())));
 
     public static final RegistryObject<Item> GRATED_CHEESE = ITEMS.register("grated_cheese",
             () -> new Item(new Item.Properties()));
@@ -47,8 +47,12 @@ public class ModItems {
     public static final RegistryObject<Item> TOMATO_SEEDS = ITEMS.register("tomato_seeds",
             () -> new ItemNameBlockItem(ModBlocks.TOMATO_CROP.get(), new Item.Properties()));
 
-
+    public static final RegistryObject<Item> SYRINGE = ITEMS.register("syringe",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PIZZA_SLICE = ITEMS.register("pizza_slice",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> RENNET = ITEMS.register("rennet",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){

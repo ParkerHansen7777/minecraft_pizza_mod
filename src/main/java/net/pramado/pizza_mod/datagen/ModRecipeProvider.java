@@ -28,6 +28,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.DOUGH.get()), has(ModItems.DOUGH.get()))
                 .save(p_251297_);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.CHEESE.get(), 1)
+                .requires(Items.WATER_BUCKET)
+                .requires(Items.MILK_BUCKET)
+                .requires(ModItems.RENNET.get())
+                .requires(ModItems.SALT.get())
+                .unlockedBy(getHasName(ModItems.RENNET.get()), has(ModItems.RENNET.get()))
+                .save(p_251297_);
+
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.RAW_PEPPERONI.get(), 4)
                 .requires(Items.BEEF)
                 .requires(Items.PORKCHOP)
@@ -38,6 +47,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModItems.PIZZA_CUTTER.get())
                 .requires(ModItems.PIZZA.get())
                 .unlockedBy(getHasName(ModItems.PIZZA_CUTTER.get()), has(ModItems.PIZZA_CUTTER.get()))
+                .save(p_251297_);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GRATED_CHEESE.get(), 16)
+                .requires(ModItems.CHEESE_GRATER.get())
+                .requires(ModItems.CHEESE.get())
+                .unlockedBy(getHasName(ModItems.CHEESE_GRATER.get()), has(ModItems.CHEESE_GRATER.get()))
                 .save(p_251297_);
     }
 

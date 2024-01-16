@@ -1,7 +1,11 @@
-// 1.20.1	2024-01-16T13:05:27.9528274	Recipes
+// 1.20.1	2024-01-16T13:55:14.5346543	Recipes
+4cd6b8974e4ebb2844ae3cf3ea51ba5e9dfecfa6 data/pizza_mod/advancements/recipes/misc/cheese.json
+23ae663e9c074863c0dc7eae5545d08cd41d7beb data/pizza_mod/advancements/recipes/misc/grated_cheese.json
 bfd76ffb3279a60efb0aa1210cd4f76ed8c62fce data/pizza_mod/advancements/recipes/misc/pizza.json
 6edd986c6a6fd2c2af13715931b71ca8ade45cb8 data/pizza_mod/advancements/recipes/misc/pizza_slice.json
 ad18b84336724fe2fd4fb3a1d0273048d020b8ef data/pizza_mod/advancements/recipes/misc/raw_pepperoni.json
+4b19a66a4633149431ce000260a1d8a957469134 data/pizza_mod/recipes/cheese.json
+88ac242aaf76dbf38996f0805d3da71256de1ec4 data/pizza_mod/recipes/grated_cheese.json
 4c9ed5718d9bf5bde6d6adafca71cfa9a9223d5d data/pizza_mod/recipes/pizza.json
 22daf4061c6dad6e9103c9f45744281ce73ad34a data/pizza_mod/recipes/pizza_slice.json
 db5dd5a9e5a89bcd5e3ac296184643cb58a52f78 data/pizza_mod/recipes/raw_pepperoni.json

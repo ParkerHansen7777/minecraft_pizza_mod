@@ -30,7 +30,8 @@ public class ModCreativeModTabs {
                            pOutput.accept(ModItems.TOMATO_SAUCE.get());
                            pOutput.accept(ModItems.TOMATO_SEEDS.get());
                            pOutput.accept(ModItems.PIZZA_CUTTER.get());
-
+                           pOutput.accept(ModItems.SYRINGE.get());
+                           pOutput.accept(ModItems.RENNET.get());
                            pOutput.accept(ModBlocks.SALT_ORE.get());
                            pOutput.accept(ModBlocks.FOOD_PROCESSOR.get());
 

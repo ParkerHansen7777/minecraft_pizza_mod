@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pizza_mod:cheese_grater"
+    },
+    {
+      "item": "pizza_mod:cheese"
+    }
+  ],
+  "result": {
+    "count": 16,
+    "item": "pizza_mod:grated_cheese"
+  }
+}

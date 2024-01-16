@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:milk_bucket"
+    },
+    {
+      "item": "pizza_mod:rennet"
+    },
+    {
+      "item": "pizza_mod:salt"
+    }
+  ],
+  "result": {
+    "item": "pizza_mod:cheese"
+  }
+}
